@@ -8,7 +8,7 @@ const SingleBookCard = ({ book }) => {
     const { bookId, bookName, author, image, rating, category, tags } = book;
 
     return (
-        <Link to={`/book-details/${bookId}`} className="card bg-base-100 shadow-xl hover:scale-105 duration-300">
+        <Link to={`/book-details/${bookId}`} className="card bg-base-100 shadow-xl lg:hover:scale-105 duration-300">
             <figure className="px-10 pt-10 h-[400px] w-full">
                 <img src={image} alt="book" className="rounded-xl w-full h-full object-cover" />
             </figure>
