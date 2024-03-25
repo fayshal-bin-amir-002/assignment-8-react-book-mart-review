@@ -1,12 +1,14 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import { FaRegStar } from "react-icons/fa";
+
 
 const SingleBookCard = ({ book }) => {
 
     const { bookId, bookName, author, image, rating, category, tags } = book;
 
     return (
-        <Link to={`/book/${bookId}`} className="card bg-base-100 shadow-xl">
+        <Link to={`/book-details/${bookId}`} className="card bg-base-100 shadow-xl hover:scale-105 duration-300">
             <figure className="px-10 pt-10 h-[400px] w-full">
                 <img src={image} alt="book" className="rounded-xl w-full h-full object-cover" />
             </figure>
@@ -22,7 +24,7 @@ const SingleBookCard = ({ book }) => {
                 <div className='divider my-2'></div>
                 <div className="flex items-center justify-between opacity-80 font-medium">
                     <p>{category}</p>
-                    <p></p>
+                    <p className='flex items-center gap-2 justify-end'>{rating} <FaRegStar /></p>
                 </div>
             </div>
         </Link>

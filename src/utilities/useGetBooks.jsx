@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const useGetBooks = () => {
     const [books, setBooks] = useState([]);
     useEffect(() => {
-        fetch("books.json")
+        fetch("../books.json")
         .then(res => res.json())
         .then(data => setBooks(data))
     },[]);
