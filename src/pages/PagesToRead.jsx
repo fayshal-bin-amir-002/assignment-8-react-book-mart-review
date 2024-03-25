@@ -10,7 +10,6 @@ const PagesToRead = () => {
     const data = [];
 
     books.map((book, idx) => data[idx] = {'name': book.bookName, 'uv': book.totalPages});
-    console.log(data);
 
     const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
 
@@ -53,5 +52,6 @@ const PagesToRead = () => {
         </div>
     );
 };
+
 
 export default PagesToRead;
