@@ -9,7 +9,7 @@ const PagesToRead = () => {
 
     const data = [];
 
-    books.map((book, idx) => data[idx] = {'name': book.bookName, 'uv': book.totalPages});
+    books.map((book, idx) => data[idx] = { 'name': book.bookName, 'uv': book.totalPages });
 
     const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
 
@@ -28,7 +28,7 @@ const PagesToRead = () => {
     };
 
 
-    if(books.length === 0) {
+    if (books.length === 0) {
         return (
             <div className="min-h-[60vh] flex items-center justify-center"><p className="text-3xl lg:text-5xl font-semibold text-red-400">No book mark as read</p></div>
         )

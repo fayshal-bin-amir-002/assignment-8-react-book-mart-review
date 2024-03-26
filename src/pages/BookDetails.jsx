@@ -29,7 +29,7 @@ const BookDetails = () => {
 
     return (
         <div className="my-8 lg:my-20 flex flex-col lg:flex-row gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-50">
-            <img src={image} alt="" className="object-cover w-full h-76 rounded lg:h-[90%] lg:col-span-6 dark:bg-gray-500" />
+            <img src={image} alt="" className="object-cover w-full h-76 rounded lg:h-[80%] lg:col-span-6 dark:bg-gray-500" />
             <div className="lg:p-6 space-y-2 lg:col-span-6">
                 <h3 className="text-2xl font-semibold sm:text-5xl">{bookName}</h3>
                 <p className="text-lg lg:text-xl font-medium opacity-80">By : {author}</p>
