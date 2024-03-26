@@ -4,7 +4,7 @@ import NavBar from "../components/NavBar";
 const MainLayout = () => {
     return (
         <>
-            <header className="container mx-auto px-5">
+            <header className="h-24 lg:h-[158px] mb-6 lg:mb-12">
                 <NavBar></NavBar>
             </header>
             <main className="container mx-auto px-5">

@@ -4,16 +4,13 @@ import { IoLocationOutline } from "react-icons/io5";
 import { FaUsers } from "react-icons/fa";
 import { TbBrandPagekit } from "react-icons/tb";
 import { MdDeleteOutline } from "react-icons/md";
-import { deleteFvrtBook } from '../utilities/localStorage';
 
 
-const SingleFvrtBook = ({ book }) => {
+const SingleFvrtBook = ({ book, handleDeteleFvrt }) => {
 
-    const { bookId, bookName, author, image, rating, category, tags, totalPages, publisher, yearOfPublishing } = book;
+    const { bookId, bookName, author, image, rating, category, tags, totalPages, publisher, yearOfPublishing } = book || {};
 
-    const handleDeteleFvrt = (book) => {
-        deleteFvrtBook(book);
-    }
+    
 
     return (
         <div className='flex flex-col lg:flex-row gap-4 lg:gap-6 p-4 lg:p-6 border rounded-2xl mb-4 lg:mb-6'>
@@ -52,7 +49,8 @@ const SingleFvrtBook = ({ book }) => {
 };
 
 SingleFvrtBook.propTypes = {
-    book: PropTypes.object.isRequired
+    book: PropTypes.object.isRequired,
+    handleDeteleFvrt: PropTypes.func.isRequired
 };
 
 export default SingleFvrtBook;
