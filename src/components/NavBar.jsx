@@ -12,6 +12,8 @@ const NavBar = () => {
                         <li><NavLink to="/" className={({ isActive }) => isActive ? 'bg-transparent text-[#23BE0A] border border-[#23BE0A]' : ''}>Home</NavLink></li>
                         <li><NavLink to="/lited-books" className={({ isActive }) => isActive ? 'bg-transparent text-[#23BE0A] border border-[#23BE0A]' : ''}>Listed Books</NavLink></li>
                         <li><NavLink to="/pages-to-read" className={({ isActive }) => isActive ? 'bg-transparent text-[#23BE0A] border border-[#23BE0A]' : ''}>Pages to Read</NavLink></li>
+                        <li><NavLink to="/favourite-books" className={({ isActive }) => isActive ? 'bg-transparent text-[#23BE0A] border border-[#23BE0A]' : ''}>Favourite Books</NavLink></li>
+                        <li><NavLink to="/reader-review" className={({ isActive }) => isActive ? 'bg-transparent text-[#23BE0A] border border-[#23BE0A]' : ''}>Reader Review</NavLink></li>
                         <button className="btn bg-[#23BE0A] text-white text-lg font-semibold">Sign In</button>
                         <button className="btn bg-[#59C6D2] text-white text-lg font-semibold">Sign Up</button>
                     </ul>
@@ -24,6 +26,7 @@ const NavBar = () => {
                     <li><NavLink to="/lited-books" className={({ isActive }) => isActive ? 'bg-transparent text-[#23BE0A] border border-[#23BE0A]' : ''}>Listed Books</NavLink></li>
                     <li><NavLink to="/pages-to-read" className={({ isActive }) => isActive ? 'bg-transparent text-[#23BE0A] border border-[#23BE0A]' : ''}>Pages to Read</NavLink></li>
                     <li><NavLink to="/favourite-books" className={({ isActive }) => isActive ? 'bg-transparent text-[#23BE0A] border border-[#23BE0A]' : ''}>Favourite Books</NavLink></li>
+                    <li><NavLink to="/reader-review" className={({ isActive }) => isActive ? 'bg-transparent text-[#23BE0A] border border-[#23BE0A]' : ''}>Reader Review</NavLink></li>
                 </ul>
             </div>
             <div className="navbar-end space-x-4 hidden lg:flex">

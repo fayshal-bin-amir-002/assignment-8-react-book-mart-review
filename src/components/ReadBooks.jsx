@@ -33,6 +33,12 @@ const ReadBooks = () => {
         }
     }, [sorting]);
 
+    if(displayBook.length === 0) {
+        return (
+            <p className="text-2xl lg:text-4xl font-semibold text-red-400">No book added in read books</p>
+        )
+    }
+
     return (
         <div className="mb-12 lg:mb-24">
             {

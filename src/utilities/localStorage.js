@@ -40,6 +40,12 @@ export const saveFvrtBook = (book) => {
     }
 }
 
+export const deleteFvrtBook = (book) => {
+    const storedBook = getFvrtBook();
+    const remainingBook = storedBook.filter((sb) => sb.bookId !== book.bookId);
+    localStorage.setItem('fvrt', JSON.stringify(remainingBook));
+}
+
 export const saveReadBook = (book) => {
     const storedBook = getData();
     const isExist = storedBook.find((sb) => sb.bookId === book.bookId);

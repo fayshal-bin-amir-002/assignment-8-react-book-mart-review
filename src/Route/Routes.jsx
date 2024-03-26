@@ -8,6 +8,7 @@ import ReadBooks from "../components/ReadBooks";
 import WishlistBooks from "../components/WishlistBooks";
 import ErrorPage from "../pages/ErrorPage";
 import FavouriteBooks from "../pages/FavouriteBooks";
+import ReaderReview from "../pages/ReaderReview";
 
 const router = createBrowserRouter([
     {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
             {
                 path: "/favourite-books",
                 element: <FavouriteBooks></FavouriteBooks>
+            }, 
+            {
+                path: "/reader-review",
+                element: <ReaderReview></ReaderReview>
             }
         ]
     },

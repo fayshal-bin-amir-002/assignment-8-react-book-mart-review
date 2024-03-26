@@ -27,6 +27,13 @@ const PagesToRead = () => {
         return <path d={getPath(x, y, width, height)} stroke="none" fill={fill} />;
     };
 
+
+    if(books.length === 0) {
+        return (
+            <div className="min-h-[60vh] flex items-center justify-center"><p className="text-3xl lg:text-5xl font-semibold text-red-400">No book mark as read</p></div>
+        )
+    }
+
     return (
         <div className="my-12 lg:my-24 flex justify-center">
             <BarChart
