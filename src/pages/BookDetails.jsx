@@ -37,8 +37,8 @@ const BookDetails = () => {
                 <p className="text-lg lg:text-xl font-medium opacity-80">{category}</p>
                 <div className="divider my-2"></div>
                 <p><span className="font-bold">Review :</span> <span className="opacity-70">{review}</span></p>
-                <div className='flex items-center gap-3'>
-                    <p className="font-bold">Tag</p>
+                <div className='flex items-center gap-3 pt-2'>
+                    <p className="font-bold">Tags:</p>
                     {
                         allTag.map((tag, idx) => <p key={idx} className='text-[#23BE0A] font-medium bg-[#23BE0A0D] px-4 py-2 rounded-full max-w-max'>{tag}</p>)
                     }

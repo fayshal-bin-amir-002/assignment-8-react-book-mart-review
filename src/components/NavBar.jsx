@@ -21,7 +21,7 @@ const NavBar = () => {
                 <a className="btn btn-ghost text-3xl font-bold">Book Mart</a>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal gap-4 text-lg font-base">
+                <ul className="menu menu-horizontal gap-3 text-lg font-base">
                     <li><NavLink to="/" className={({ isActive }) => isActive ? 'bg-transparent text-[#23BE0A] border border-[#23BE0A]' : ''}>Home</NavLink></li>
                     <li><NavLink to="/lited-books" className={({ isActive }) => isActive ? 'bg-transparent text-[#23BE0A] border border-[#23BE0A]' : ''}>Listed Books</NavLink></li>
                     <li><NavLink to="/pages-to-read" className={({ isActive }) => isActive ? 'bg-transparent text-[#23BE0A] border border-[#23BE0A]' : ''}>Pages to Read</NavLink></li>
