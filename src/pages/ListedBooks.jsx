@@ -26,7 +26,7 @@ const ListedBooks = () => {
                 <Link to='' onClick={() => setTab(0)} className={`tab ${tab === 0 ? 'tab-active' : ''}`}>Read Books</Link>
                 <Link to="wishlist-books" onClick={() => setTab(1)} className={`tab ${tab === 1 ? 'tab-active' : ''}`}>Wishlist Books</Link>
             </div>
-            <div className="flex gap-3">
+            <div className="">
                 <Outlet context={sorting}></Outlet>
             </div>
         </div>

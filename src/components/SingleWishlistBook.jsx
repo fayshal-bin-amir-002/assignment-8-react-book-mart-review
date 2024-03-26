@@ -10,8 +10,8 @@ const SingleWishlistBook = ({ book }) => {
 
     return (
         <div className='flex flex-col lg:flex-row gap-4 lg:gap-6 p-4 lg:p-6 border rounded-2xl mb-4 lg:mb-6'>
-            <div className='h-[220px] lg:w-[20%]'>
-                <img src={image} className='h-full w-full rounded-2xl object-cover' />
+            <div className='h-[260px] text-center lg:w-[20%]'>
+                <img src={image} className='h-full inline rounded-2xl object-cover' />
             </div>
             <div className='lg:w-[80%]'>
                 <h3 className='text-xl lg:text-2xl font-bold mb-4'>{bookName}</h3>

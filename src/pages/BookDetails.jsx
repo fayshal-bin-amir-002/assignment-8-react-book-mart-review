@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import useGetBooks from "../utilities/useGetBooks";
-import { saveReadBook, saveWishlistBook } from "../utilities/localStorage";
+import { saveReadBook, saveWishlistBook, saveFvrtBook } from "../utilities/localStorage";
 
 const BookDetails = () => {
 
@@ -20,6 +20,10 @@ const BookDetails = () => {
 
     const handleWishlist = (book) => {
         saveWishlistBook(book)
+    }
+
+    const handleAddFvrt = (book) => {
+        saveFvrtBook(book)
     }
 
 
@@ -63,6 +67,8 @@ const BookDetails = () => {
                     onClick={() => handleRead(book)}>Read</button>
                     <button className="btn bg-[#59C6D2] text-white text-lg font-semibold"
                     onClick={() => handleWishlist(book)}>Wishlist</button>
+                    <button className="btn bg-[#23BE0A] text-white text-lg font-semibold"
+                    onClick={() => handleAddFvrt(book)}>Add to Favourite</button>
                 </div>
             </div>
         </div>

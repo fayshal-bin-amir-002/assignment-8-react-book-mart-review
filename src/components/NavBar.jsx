@@ -23,6 +23,7 @@ const NavBar = () => {
                     <li><NavLink to="/" className={({ isActive }) => isActive ? 'bg-transparent text-[#23BE0A] border border-[#23BE0A]' : ''}>Home</NavLink></li>
                     <li><NavLink to="/lited-books" className={({ isActive }) => isActive ? 'bg-transparent text-[#23BE0A] border border-[#23BE0A]' : ''}>Listed Books</NavLink></li>
                     <li><NavLink to="/pages-to-read" className={({ isActive }) => isActive ? 'bg-transparent text-[#23BE0A] border border-[#23BE0A]' : ''}>Pages to Read</NavLink></li>
+                    <li><NavLink to="/favourite-books" className={({ isActive }) => isActive ? 'bg-transparent text-[#23BE0A] border border-[#23BE0A]' : ''}>Favourite Books</NavLink></li>
                 </ul>
             </div>
             <div className="navbar-end space-x-4 hidden lg:flex">
