@@ -62,7 +62,7 @@ const BookDetails = () => {
                         <p className="col-span-3 font-semibold">{rating}</p>
                     </div>
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="flex flex-wrap items-center gap-4">
                     <button className="btn bg-transparent border text-black text-lg font-semibold"
                     onClick={() => handleRead(book)}>Read</button>
                     <button className="btn bg-[#59C6D2] text-white text-lg font-semibold"
